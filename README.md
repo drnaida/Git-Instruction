@@ -4,11 +4,16 @@ Git is a distributed version control system for tracking changes in source code 
 
 GitHub and GitLab are web-services for hosting projects and their cooperative developing, based on Git.
 
-Several places where your code may contain:
-* Working tree
-* Local repository
-* Remote repository
-* Index
+### Several places where your code may contain:
+* **Working tree or untracked area** is the area where you are currently working. It's where your files are.
+* **Index or the staging area** is where git starts tracking and saving changes that happen in your files. To place files in Index you have to write command "git add your-file.py your-file-2.py". If after adding files to the staging area you make changes in them, you will have to add them to the staging area again.
+* **Local repository** is everything in your .git directory, the area which saves everything. To add elements from the staging area to local repository use 'git commit -m "" ' When you make commit, your staging area will become empty.
+* **Remote repository** - remote copy of your repository. Can be stored on GitHub/GitLab or host it by yourself. To get the copy of your local repository to remote repository use "git push origin name-of-your-branch".
+
+### Three states of Git files
+* Modified 
+* Staged 
+* Committed
 ## How to start your work in the repository which has already been created:
 1. Open repository
     1. Find button "Clone or download" in GitHub or "Clone" in GitLab
@@ -31,10 +36,10 @@ It happens when you created new local branch and wanted to push it on server, bu
 
 ## Pushing your code to GitHub/GitLab repository
 Don't forget that you should have worked in a different branch (not master).
-1. git status 
-1. git add 
-1. git commit -m "Name of your commit"
-1. git push origin name-of-your-branch
+1. git status (Shows the files in your Working Tree and the files in your Staging Area.)
+1. git add (Adds files you mentioned to the staging area)
+1. git commit -m "Name of your commit" (Adds files from the staging area to your Local Repository)
+1. git push origin name-of-your-branch (Makes copy of your repository to the remote repository)
 ## Other Commands
 * git log    (Let you see history of commits in the current branch. To finish view press "q")
 * git diff   (Shows you unstaged changes)
