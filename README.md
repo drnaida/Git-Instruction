@@ -11,9 +11,11 @@ GitHub and GitLab are web-services for hosting projects and their cooperative de
 * **Remote repository** - remote copy of your repository. Can be stored on GitHub/GitLab or host it by yourself. To get the copy of your local repository to remote repository use "git push origin name-of-your-branch".
 
 ### Three states of Git files
-* Modified 
-* Staged 
-* Committed
+1. **Untracked** - new file which wasn't added to be tracked by command "git add"
+1. **Tracked**
+    1. **Unmodified** - any file after "git commit".
+    1. **Modified** - any file after it's been changed.
+    1. **Staged** - any file after "git add".
 ## How to start your work in the repository which has already been created:
 1. Open repository
     1. Find button "Clone or download" in GitHub or "Clone" in GitLab
