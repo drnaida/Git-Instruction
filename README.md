@@ -44,7 +44,7 @@ Don't forget that you should have worked in a different branch (not master).
 1. git push origin name-of-your-branch (Makes copy of your repository to the remote repository)
 ## Other Commands
 * git log    (Let you see history of commits in the current branch. To finish view press "q")
-* git diff   (Shows you unstaged changes)
+* git diff   (Shows you unstaged changes, works if you didn't use git add)
 * git rm name-of-the-file (Delete your file from working tree and index. For example, you had image in your directory and you decided to delete it. However, you can't just press button "Delete", you also have to use git rm)
 * git commit --amend (Put changese in your last commit and ask for new commit name)
 * git commit --amend -no-edit (Put chenges in your last commit without asking for a new commit name)
